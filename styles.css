@@ -1,4 +1,3 @@
-/* styles.css - basic typography and table layout for indexx.html */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body{
@@ -8,8 +7,6 @@ body{
     background:#94ad8c;
     color:#222;
 }
-
-/* central layout for the table-based grid */
 table.layout{
     width:800px;
     max-width:90%;
@@ -25,29 +22,12 @@ table.layout td{
     box-sizing:border-box;
     font-size:0.95rem;
 }
-
-/* Paragraphs inside cells */
 table.layout td p{ margin:0; line-height:1.45 }
-
-/* Utility example class to change font for a specific element */
-.exp{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    color: #114b1a;
-}
-
-/* Responsive: stack cells on narrow screens */
-@media (max-width:640px){
-    table.layout{ width:100%; border-spacing:12px }
-    table.layout td{ display:block; width:100% !important }
-}
-
-/* Simple, beginner-friendly form styles for index2.html */
 .form-container{
-    max-width:720px;       /* ograniczona szerokość, łatwiejsze czytanie */
-    margin:1.2rem auto;    /* wyśrodkowanie */
-    padding:1rem 1.1rem;   /* odstęp wewnętrzny */
-    background:#fbfff7;    /* delikatne, jasne tło */
+    max-width:720px;       
+    margin:1.2rem auto;    
+    padding:1rem 1.1rem;   
+    background:#fbfff7;   
     border-radius:8px;
     box-shadow:0 6px 16px rgba(0,0,0,0.06);
 }
@@ -65,24 +45,20 @@ table.layout td p{ margin:0; line-height:1.45 }
     border:1px solid #cfcfcf;
     border-radius:4px;
     font-size:1rem;
-    box-sizing:border-box; /* ensure inputs fit their container */
+    box-sizing:border-box; 
 }
-
-/* Radios/checkboxes shouldn't be full-width and should align with their labels */
 .form-container input[type="radio"],
 .form-container input[type="checkbox"]{
     width:auto;
     margin-right:6px;
     vertical-align:middle;
 }
-
 .form-container .radios label{
     display:inline-block;
     margin-right:14px;
     cursor:pointer;
     font-weight:500;
 }
-
 .form-container fieldset{ border:0; margin:0 0 0.8rem; padding:0 }
 .form-container legend{ font-weight:600; margin-bottom:0.35rem }
 .form-container button{
@@ -95,7 +71,6 @@ table.layout td p{ margin:0; line-height:1.45 }
     cursor:pointer;
 }
 .form-container button[type="reset"]{ background:#6c6c6c; margin-left:8px }
-
-/* Very small helper classes */
 .center{ text-align:center }
 .lead{ font-size:1.05rem; color:#2a2a2a }
+
