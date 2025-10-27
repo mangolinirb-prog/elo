@@ -5,28 +5,17 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>Galeria ogórków</title>
 		<style>
-			/* Use Luminari if available, otherwise fallback to generic fantasy */
-			body{font-family: "Luminari", fantasy, serif; background: linear-gradient(180deg,#f7fff7,#f0fff0); color:#222; margin:0; padding:2rem}
+			body{font-family: "Luminari", fantasy, serif; background: radial-gradient(circle,#b0d3b0,#6fc16f); color:#222; margin:0; padding:2rem}
 			h1{text-align:center;margin:0 0 1rem 0;font-size:1.6rem;color:#117a21;letter-spacing:0.6px}
 
-			/* Gallery table styled for nicer look */
 			.gallery{margin:0 auto;border-collapse:separate;border-spacing:20px 18px}
 			.gallery td{vertical-align:top;text-align:center;padding:6px}
 
-			.gallery img{width:170px;height:auto;border-radius:10px;box-shadow:0 10px 24px rgba(107,35,80,0.12);transition:transform .18s ease,box-shadow .18s ease}
-			.gallery img:hover{transform:translateY(-6px) scale(1.03);box-shadow:0 18px 40px rgba(107,35,80,0.18)}
+			.gallery img{width:170px;height:auto;border-radius:10px}
 
 			.caption{display:block;margin-top:.6rem;color:#3a1f2e;font-size:0.95rem}
 
-			/* Make the gallery responsive: 4 columns -> 2 columns -> 1 on narrow screens */
-			@media (max-width:900px){
-				.gallery img{width:140px}
-			}
-			@media (max-width:640px){
-				.gallery{border-spacing:12px 12px}
-				.gallery img{width:46vw;max-width:220px}
-				.gallery td{display:block}
-			}
+			
 		</style>
 	</head>
 	<body>
