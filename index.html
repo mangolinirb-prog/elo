@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 	<head>
@@ -11,18 +10,18 @@
 				display:flex;
 				align-items:center;
 				justify-content:center;
-				background: linear-gradient(135deg,#ffd1ea,#ff9ac2);
-				font-family: Arial, Helvetica, sans-serif;
-				color:#2b2b2b;
+				background: radial-gradient(circle,#ffd1ea,#ff9ac2);
+				font-family: Arial, Helvetica;
+				color:#6e0947;
 			}
 			.container{
 				text-align:center;
 			}
-			h1{margin-bottom:1rem}
+			
 
 			.buttons{
 				display:flex;
-				gap:1.25rem;
+				gap:2rem;
 				justify-content:center;
 				align-items:center;
 				flex-wrap:wrap;
@@ -32,51 +31,38 @@
 				width:110px;
 				height:110px;
 				border-radius:50%;
-				background: #fff;
+
+				background: #ce4a93;
 				display:inline-flex;
 				align-items:center;
 				justify-content:center;
-				box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+				box-shadow: 0 14px 30px rgba(0,0,0,0.12);
 				text-decoration:none;
-				color:#ff3d8f;
+				color:#eccbd9;
 				font-weight:600;
-				transition: transform .16s ease, box-shadow .16s ease;
+				
 			}
-			.circle:active, .circle:focus{outline:none}
-			.circle:hover{
-				transform: translateY(-6px) scale(1.03);
-				box-shadow: 0 14px 30px rgba(0,0,0,0.18);
-			}
-
-			/* small labels under the circles */
-			.label{display:block;margin-top:.6rem;font-size:0.95rem;color:#2b2b2b}
-
-			@media (max-width:480px){
-				.circle{width:86px;height:86px;font-size:0.9rem}
-				.buttons{gap:.9rem}
-			}
+			
 		</style>
 	</head>
 	<body>
 		<div class="container">
-			<h1>Witaj — wybierz stronę</h1>
+			<h1>Hejoooooooooooooooo</h1>
 
 			<div class="buttons">
-				<!-- Links use relative paths; adjust if your pages are in different folders -->
-				<a class="circle" href="../strona/indexx.html" title="Kolumny">K</a>
+				
+				<a class="circle" href="../strona/indexx.html" title="Kolumny">Kolumny</a>
 				<div>
-					<a class="circle" href="../strona/index1.html" title="Galeria">G</a>
+					<a class="circle" href="../strona/index1.html" title="Galeria">Ogóreczki</a>
 				</div>
 				<div>
-					<a class="circle" href="../strona/index2.html" title="Formularz">F</a>
+					<a class="circle" href="../strona/index2.html" title="Formularz">Formularz</a>
 				</div>
 			</div>
 
-			<div style="margin-top:1rem;display:flex;gap:1.4rem;justify-content:center">
-				<span class="label">Kolumny</span>
-				<span class="label">Galeria ogórków</span>
-				<span class="label">Formularz</span>
-			</div>
+			
 		</div>
 	</body>
 </html>
+
+
