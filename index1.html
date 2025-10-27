@@ -8,32 +8,38 @@
 			body{font-family: "Luminari", fantasy, serif; background: radial-gradient(circle,#b0d3b0,#6fc16f); color:#222; margin:0; padding:2rem}
 			h1{text-align:center;margin:0 0 1rem 0;font-size:1.6rem;color:#117a21;letter-spacing:0.6px}
 
-			.gallery{margin:0 auto;border-collapse:separate;border-spacing:20px 18px}
-			.gallery td{vertical-align:top;text-align:center;padding:6px}
+			
+			.gallery{ display:flex; flex-wrap:wrap; gap:18px 20px; justify-content:center; margin:0 auto; padding:0; list-style:none }
+			.gallery .item{ width:170px; text-align:center; padding:6px; box-sizing:border-box }
+			
+			.gallery .item{ 
+				flex: 0 0 calc((100% - 80px) / 5);
+				max-width: calc((100% - 80px) / 5);
+				text-align:center; padding:6px; box-sizing:border-box 
+			}
 
-			.gallery img{width:170px;height:auto;border-radius:10px}
+			.gallery img{ width:100%; height:auto; border-radius:10px; display:block }
 
 			.caption{display:block;margin-top:.6rem;color:#3a1f2e;font-size:0.95rem}
 
+			
 			
 		</style>
 	</head>
 	<body>
 		<h1>Ogórki kiszone</h1>
 
-		<table class="gallery" cellpadding="0" cellspacing="0" border="0" aria-label="Galeria ogórków">
-			<tr>
-				<td><img src="kiszone.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku pierwsze</span></td>
-				<td><img src="kiszone.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku drugie</span></td>
-				<td><img src="kiszone.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku trzecie</span></td>
-				<td><img src="kiszone.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku czwarte</span></td>
-			</tr>
-			<tr>
-				<td><img src="kiszone.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku piąte</span></td>
-				<td><img src="kiszone.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku szóste</span></td>
-				<td><img src="kiszone.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku siódme</span></td>
-				<td><img src="kiszone.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku ósme</span></td>
-			</tr>
-		</table>
+		<div class="gallery" role="list" aria-label="Galeria ogórków">
+			<div class="item" role="listitem"><img src="kiszone.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku pierwsze</span></div>
+			<div class="item" role="listitem"><img src="kiszone1.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku drugie</span></div>
+			<div class="item" role="listitem"><img src="kiszone2.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku trzecie</span></div>
+			<div class="item" role="listitem"><img src="kiszone3.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku czwarte</span></div>
+			<div class="item" role="listitem"><img src="kiszone4.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku piąte</span></div>
+			<div class="item" role="listitem"><img src="kiszone5.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku szóste</span></div>
+			<div class="item" role="listitem"><img src="kiszone6.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku siódme</span></div>
+			<div class="item" role="listitem"><img src="kiszone7.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku ósme</span></div>
+			<div class="item" role="listitem"><img src="kiszone8.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku siódme</span></div>
+			<div class="item" role="listitem"><img src="kiszone9.jpg" alt="ogórki kiszone"><span class="caption">ogórki kiszone w słoiku ósme</span></div>
+		</div>
 	</body>
 </html>
